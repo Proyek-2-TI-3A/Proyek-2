@@ -1,17 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <?php
-    $mysqli = mysqli_connect('localhost', 'root', '', 'websekolah');
-    
-    if($mysqli){
-      echo "sudah connect";
-      
-    }else{
-      echo "belum konek";
-    }
-    //baru
-  ?>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -185,7 +173,12 @@
                           </figcaption>
                         </figure>
                         <div class="mu-latest-course-single-content">
-                          <h2><a href="#">Lorem ipsum dolor sit amet.</a></h2>
+                          <?php
+                            require_once "db_connection/konek.php";
+                            $query = mysqli_query($mysqli, "SELECT nama_kampus FROM Kampus WHERE id = 1");
+                            $hasil  = mysqli_fetch_assoc($query);
+                          ?>
+                          <h2><a href="#"><?php echo $hasil['deskripsi_singkat']?></a></h2>
                           <h4>Course Information</h4>
                           <!-- <ul>
                             <li> <span>Course Price</span> <span>$250</span></li>
@@ -276,7 +269,7 @@
                             </figcaption>
                           </figure>
                           <div class="mu-latest-course-single-content">
-                            <h4><a href="#">Lorem ipsum dolor sit amet.</a></h4>
+                            <h4><a href="#"></a></h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quod nisi quisquam modi dolore, dicta obcaecati architecto quidem ullam quia.</p>
                             <div class="mu-latest-course-single-contbottom">
                               <a href="#" class="mu-course-details">Details</a>
