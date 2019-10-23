@@ -7,7 +7,7 @@
     <title>Education City | Univeritas Negeri Malang(UM) </title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/favicon1.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/favicon1.png" type="image/x-icon">
 
     <!-- Font awesome -->
     <link href="assets/css/font-awesome.css" rel="stylesheet">
