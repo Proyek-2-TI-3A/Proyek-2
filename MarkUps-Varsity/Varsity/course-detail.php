@@ -175,15 +175,17 @@
                         <div class="mu-latest-course-single-content">
                           <?php
                             require_once "db_connection/konek.php";
-                            $query = mysqli_query($mysqli, "SELECT * FROM Kampus WHERE id = '1'");
-                            while($hasil  = mysqli_fetch_assoc($query)) {
+                            if (isset($_GET['get_id'])) {
+                              $id = $_GET['get_id'];
+                              $query = mysqli_query($mysqli, "SELECT * FROM Kampus WHERE id = '$id'");
+                              while($hasil  = mysqli_fetch_assoc($query)) {
                           ?>
                           <h2><a href="#"><?php echo $hasil['nama_kampus']?></a></h2>
                           <h4>Campus Information</h4>
                           <p><?php echo $hasil['deskripsi_singkat']?></p>
                           <h4>Description</h4>
                           <p><?php echo $hasil['deskripsi']?></p>
-                          <?php }?>
+                          <?php }}?>
                         </div>
                       </div> 
                     </div>                                   

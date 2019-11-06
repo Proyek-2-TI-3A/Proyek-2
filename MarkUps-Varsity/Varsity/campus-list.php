@@ -168,25 +168,25 @@
     // select all tasks if page is visited or refreshed
     
     require_once "db_connection/konek.php";
-    $i = 1;
-    $query = mysqli_query($mysqli, "SELECT * FROM Kampus WHERE id = '$i'");
+    $query = mysqli_query($mysqli, "SELECT * FROM Kampus");
 		// $tasks = mysqli_query($db, "SELECT * FROM tasks");
-
+      $get_id;
     while ($hasil = mysqli_fetch_array($query)) { ?>
           <div class="mu-contact-content">           
             <div class="row">
               <div class="col-md-6">
                 <div class="campus-list">
-                  <ul>
-                    <li><a href="course-detail.php"><h3><?php echo $hasil['id']; ?><?php echo $hasil['nama_kampus']; ?></h3></a></li>
-                  </ul>
+                <tr>
+                  <td><?php echo $hasil['id']?></td>
+                  <td><a href="course-detail.php"get_id=<?php echo $hasil['id']?>><?php echo $hasil['nama_kampus']?></a></td>
+				        </tr>
                 </div>
               </div>
               <div class="col-md-6">
               </div>
             </div>
           </div>
-          <?php $i++; } ?>	
+          <?php } ?>	
           <!-- end contact content -->
          </div>
        </div>
