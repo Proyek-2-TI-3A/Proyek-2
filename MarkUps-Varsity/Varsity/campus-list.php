@@ -178,7 +178,7 @@
                 <div class="campus-list">
                 <tr>
                   <td><?php echo $hasil['id']?></td>
-                  <td><a href="course-detail.php"get_id=<?php echo $hasil['id']?>><?php echo $hasil['nama_kampus']?></a></td>
+                  <td><a href="get-id.php"get_id=<?php echo $hasil['id']?>><?php echo $hasil['nama_kampus']?></a></td>
 				        </tr>
                 </div>
               </div>

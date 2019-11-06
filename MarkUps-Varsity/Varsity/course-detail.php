@@ -175,8 +175,9 @@
                         <div class="mu-latest-course-single-content">
                           <?php
                             require_once "db_connection/konek.php";
-                            if (isset($_GET['get_id'])) {
-                              $id = $_GET['get_id'];
+                            require "get-id.php";
+                            if (isset($_GET['id'])) {
+                              $id = $_GET['id'];
                               $query = mysqli_query($mysqli, "SELECT * FROM Kampus WHERE id = '$id'");
                               while($hasil  = mysqli_fetch_assoc($query)) {
                           ?>
