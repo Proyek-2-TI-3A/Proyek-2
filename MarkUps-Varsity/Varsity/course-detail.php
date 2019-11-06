@@ -175,77 +175,15 @@
                         <div class="mu-latest-course-single-content">
                           <?php
                             require_once "db_connection/konek.php";
-                            $query = mysqli_query($mysqli, "SELECT nama_kampus FROM Kampus WHERE id = 1");
-                            $hasil  = mysqli_fetch_assoc($query);
+                            $query = mysqli_query($mysqli, "SELECT * FROM Kampus WHERE id = '1'");
+                            while($hasil  = mysqli_fetch_assoc($query)) {
                           ?>
-                          <h2><a href="#"><?php echo $hasil['deskripsi_singkat']?></a></h2>
-                          <h4>Course Information</h4>
-                          <!-- <ul>
-                            <li> <span>Course Price</span> <span>$250</span></li>
-                            <li> <span>Place</span> <span>California,USA</span></li>
-                            <li> <span>Total Students</span> <span>800+</span></li>
-                            <li> <span>Course Duration</span> <span>4 Weeks</span></li>
-                            <li> <span>Course Start</span> <span>July 25, 2016</span></li>
-                          </ul> -->
+                          <h2><a href="#"><?php echo $hasil['nama_kampus']?></a></h2>
+                          <h4>Campus Information</h4>
+                          <p><?php echo $hasil['deskripsi_singkat']?></p>
                           <h4>Description</h4>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet quod nisi quisquam modi dolore, dicta obcaecati architecto quidem ullam quia.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo est itaque vero porro quasi illo ex consequuntur ad animi commodi, ipsam provident voluptas vel adipisci. Minima repellendus vel est, sequi labore quo ipsa voluptatem officiis ex fuga nemo quas. Eligendi inventore ducimus omnis, maxime, alias accusantium similique minus! Labore facilis qui, sunt, ipsam consectetur minus sapiente saepe numquam magnam quidem.</p>
-                          <blockquote>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, placeat, ipsa. Modi sed quibusdam vel autem fugit, eaque, iste. Excepturi fugit dignissimos suscipit dolor perferendis debitis magni sed, quia ab.</p>
-                          </blockquote>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis ea consequatur doloremque deleniti error ullam, accusamus vel est alias, sit. Similique voluptas aliquid, excepturi accusamus, sequi ducimus incidunt mollitia non.</p>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi saepe possimus doloribus quod quibusdam officia suscipit qui illum nemo itaque, porro ipsam tempore enim error eius quia, culpa. Reprehenderit consequuntur voluptatem dolorum magni natus inventore molestias veritatis eos aspernatur repudiandae.</p>
-                          <h4>Course Outline</h4>
-                          <!-- <div class="table-responsive">
-                            <table class="table">
-                            <thead>
-                              <tr>
-                                <th> Title </th>
-                                <th> Course Time </th>
-                                <th> Spent Time </th>
-                                <th> Status </th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td> 1. Topic 1 </td>
-                                <td> 15:30 </td>
-                                <td> 13:80 </td>
-                                <td> Successful </td>
-                              </tr>
-                              <tr>
-                                <td> 2. Topic 2 </td>
-                                <td> 15:30 </td>
-                                <td> 13:80 </td>
-                                <td> Successful </td>
-                              </tr>
-                              <tr>
-                                <td> 3. Topic 3 </td>
-                                <td> 15:30 </td>
-                                <td> - </td>
-                                <td> Successful </td>
-                              </tr>
-                              <tr>
-                                <td> 4. Topic 4 </td>
-                                <td> 15:30 </td>
-                                <td> 13:80 </td>
-                                <td> Successful </td>
-                              </tr>
-                              <tr>
-                                <td> 5. Topic 5 </td>
-                                <td> 15:30 </td>
-                                <td> - </td>
-                                <td> Waiting </td>
-                              </tr>
-                              <tr>
-                                <td> 6. Topic 6 </td>
-                                <td> 15:30 </td>
-                                <td> 13:80 </td>
-                                <td> - </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          </div> -->
+                          <p><?php echo $hasil['deskripsi']?></p>
+                          <?php }?>
                         </div>
                       </div> 
                     </div>                                   
