@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <title>Education City | Contact</title>
+    <title>Education City | Daftar Kampus</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/img/favicon1.png" type="image/x-icon">
@@ -104,9 +104,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-            <li class="active"><a href="index.html">Home</a></li>            
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Perguruan Tinggi <span class="fa fa-angle-down"></span></a>
+            <li><a href="index.html">Home</a></li>            
+            <li class="active">
+              <a href="#">Perguruan Tinggi</a>
             </li>           
             <li><a href="gallery.html">Gallery</a></li>            
             <li><a href="contact.html">Contact</a></li>             
