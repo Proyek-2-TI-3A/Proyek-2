@@ -284,7 +284,7 @@
                 <h4>Program Sarjana</h4>
                 <?php
                 require_once "db_connection/konek.php";
-                $query = mysqli_query($mysqli, "SELECT * FROM program_studi ORDER BY id");
+                $query = mysqli_query($mysqli, "SELECT * FROM program_studi WHERE tingkat = 'Sarjana'");
                 while ($hasil = mysqli_fetch_array($query)) { ?>
                 
                 <ul>
