@@ -139,10 +139,10 @@
      <div class="row">
        <div class="col-md-12">
          <div class="mu-page-breadcrumb-area">
-           <h2>Contact</h2>
+           <h2>List Kampus</h2>
            <ol class="breadcrumb">
             <li><a href="#">Home</a></li>            
-            <li class="active">Contact</li>
+            <li class="active">List Kampus</li>
           </ol>
          </div>
        </div>
