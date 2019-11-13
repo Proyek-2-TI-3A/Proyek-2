@@ -159,9 +159,9 @@
          <div class="mu-contact-area">
           <!-- start title -->
           <div class="mu-title">
-            <h2>List Kampus</h2>
-            <p>Informasi untuk kampus-kampus area Malang yang sudah tersedia dibawah dan terdapat list
-              untuk itu anda dapat melihat informasi mengenai kampus-kampus malang </p>
+            <h2>List</h2>
+            <p>Informasi untuk kampus-kampus area Malang yang sudah tersedia dibawah
+              untuk itu anda dapat melihat informasi mengenai kampus yang ada di malang </p>
           </div>
           <!-- end title -->
           <!-- start contact content -->
