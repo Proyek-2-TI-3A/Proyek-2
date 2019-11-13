@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <title>Education City | Contact</title>
+    <title>Education City | HOME</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/img/favicon1.png" type="image/x-icon">
@@ -18,7 +18,7 @@
     <!-- Fancybox slider -->
     <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" /> 
     <!-- Theme color -->
-    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">    
+    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">          
 
     <!-- Main style sheet -->
     <link href="assets/css/style.css" rel="stylesheet">    
@@ -37,8 +37,8 @@
     <![endif]-->
 
   </head>
-  <body>
-  
+  <body> 
+
   <!--START SCROLL TOP BUTTON -->
     <a class="scrollToTop" href="#">
       <i class="fa fa-angle-up"></i>      
@@ -105,13 +105,13 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
             <li class="active"><a href="index.html">Home</a></li>            
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Perguruan Tinggi <span class="fa fa-angle-down"></span></a>
+            <li>
+              <a href="campus-list.php" class="active">Perguruan Tinggi</a>
             </li>           
             <li><a href="gallery.html">Gallery</a></li>            
             <li><a href="contact.html">Contact</a></li>             
             <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
-          </ul>                      
+          </ul>                     
         </div><!--/.nav-collapse -->        
       </div>     
     </nav>
@@ -125,7 +125,7 @@
         <div class="row">
           <div class="col-md-12">            
             <form class="mu-search-form">
-             <input type="search" placeholder="Type Your Keyword(s) & Hit Enter">
+              <input type="search" placeholder="Type Your Keyword(s) & Hit Enter">              
             </form>
           </div>
         </div>
@@ -133,65 +133,144 @@
     </div>
   </div>
   <!-- End search box -->
- <!-- Page breadcrumb -->
- <section id="mu-page-breadcrumb">
-   <div class="container">
-     <div class="row">
-       <div class="col-md-12">
-         <div class="mu-page-breadcrumb-area">
-           <h2>Contact</h2>
-           <ol class="breadcrumb">
-            <li><a href="#">Home</a></li>            
-            <li class="active">Contact</li>
-          </ol>
-         </div>
-       </div>
-     </div>
-   </div>
- </section>
- <!-- End breadcrumb -->
-
- <!-- Start contact  -->
- <section id="mu-contact">
-   <div class="container">
-     <div class="row">
-       <div class="col-md-12">
-         <div class="mu-contact-area">
-          <!-- start title -->
-          <div class="mu-title">
-            <h2>Get in Touch</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores ut laboriosam corporis doloribus, officia, accusamus illo nam tempore totam alias!</p>
+  <!-- Start Slider -->
+  <section id="mu-slider">
+    <!-- Start single slider item -->
+    <div class="mu-slider-single">
+      <div class="mu-slider-img">
+        <figure>
+          <img src="assets/img/pol 1.png" alt="img">
+        </figure>
+      </div>
+      <div class="mu-slider-content">
+        <h4>Selamat Datang di Dunia Pendidikan</h4>
+        <span></span>
+        <h2>Kami akan membantu anda belajar</h2>
+        <p>Mempunya visi misi dan berkompeten untuk membantu keahlian yang dipilih dalam kejuaruan</p>
+        <a href="#" class="mu-read-more-btn">Read More</a>
+      </div>
+    </div>
+    <!-- Start single slider item -->
+    <!-- Start single slider item -->
+    <div class="mu-slider-single">
+      <div class="mu-slider-img">
+        <figure>
+          <img src="assets/img/brawi1.jpg" alt="img">
+        </figure>
+      </div>
+      <div class="mu-slider-content">
+        <h4>Kualitas premium</h4>
+        <span></span>
+        <h2>Pendidikan Terbaik</h2>
+        <p>Kualitas pendidikan terbentuk dari kualitas para tenaga pengajar dan fasilitas yang lengkap</p>
+        <a href="#" class="mu-read-more-btn">Read More</a>
+      </div>
+    </div>
+    <!-- Start single slider item -->
+    <!-- Start single slider item -->
+    <div class="mu-slider-single">
+      <div class="mu-slider-img">
+        <figure>
+          <img src="assets/img/UM.jpg" alt="img">
+        </figure>
+      </div>
+      <div class="mu-slider-content">
+        <h4>Khusus untuk Pendidikan</h4>
+        <span></span>
+        <h2>Pendidikan Untuk Semua Orang</h2>
+        <p>Pendidikan yang tidak ada batasnya, membuat pandangan dan teknology semakin berkembang pesat, dan harus menempuh jalur pendidikan tinggi</p>
+        <a href="#" class="mu-read-more-btn">Read More</a>
+      </div>
+    </div>
+    <!-- Start single slider item -->    
+  </section>
+  <!-- End Slider -->
+  <!-- Start service  -->
+  <section id="mu-service">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="mu-service-area">
+            <!-- Start single service -->
+            <div class="mu-service-single">
+              <span class="fa fa-book"></span>
+              <h3>Belajar Online</h3>
+              <p>Lebih efisien mempersingkat waktu, mudah dalam belajar dan jika tidak mengerti bisa bertanya pada dosen alhi </p>
+            </div>
+            <!-- Start single service -->
+            <!-- Start single service -->
+            <div class="mu-service-single">
+              <span class="fa fa-users"></span>
+              <h3>Dosen Ahli</h3>
+              <p>Ahli dalam bidangnya dan mudah dalam pengajarannya sehingga dapat mudah dimengerti dalam proses tanya jawab</p>
+            </div>
+            <!-- Start single service -->
+            <!-- Start single service -->
+            <div class="mu-service-single">
+              <span class="fa fa-table"></span>
+              <h3>Kelas Terbaik</h3>
+              <p>Dapat memilih kelas terbaik sesuai jurusan yang diinginkan, dan memilih sesuai keahlian masing-masing</p>
+            </div>
+            <!-- Start single service -->
           </div>
-          <!-- end title -->
-          <!-- start contact content -->
-          <?php 
-    // select all tasks if page is visited or refreshed
-    
-    require_once "db_connection/konek.php";
-    $query = mysqli_query($mysqli, "SELECT * FROM Kampus ORDER BY id");
-		// $tasks = mysqli_query($db, "SELECT * FROM tasks");
-    while ($hasil = mysqli_fetch_array($query)) { ?>
-          <div class="mu-contact-content">           
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End service  -->
+
+  <!-- Start about us -->
+  <section id="mu-about-us">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mu-about-us-area">           
             <div class="row">
-              <div class="col-md-6">
-                <div class="col-lg-6 col-md-3 col-sm-3">
-                    <ul>
-                      <li><a href="course-detail.php"?hasil=<?php echo $hasil['id'];?>><?php echo $hasil['nama_kampus'];?></a></li>
-                    </ul>
+              <div class="col-lg-6 col-md-6">
+                <div class="mu-about-us-left">
+                  <!-- Start Title -->
+                  <div class="mu-title">
+                    <h2>Tentang Kami</h2>              
+                  </div>
+                  <!-- End Title -->
+                  <p>Menyediakan bahan untuk mempermudah dalam memilih kejuruan yang sesuai dalam keahlian</p>
+                  <ul>
+                    <li>Memudahkan untuk mengetahui tentang diploma/Teknik.</li>
+                    <li>Memudahkan untuk mengetahui tentang universitas</li>
+                    <li>Mempunyai banyak pilihan perguruan tinggi di area Malang</li>
+                    <li>Mudah dalam mengetahui informasi yang tersedia</li>
+                    <li>Memahami dalam memilih Jurusan yang sesuai keahlian</li>
+                  </ul>
+                  <p>Kami telah menyediakan kemudahan bagi para pelajar untuk melanjutkan ke perguruan tinggi yang diinginkan</p>
                 </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <div class="mu-about-us-right">                            
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/ygz4ZWo72YY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                  </iframe>
+                  <!-- <img src="assets/img/smasingomal.JPG" alt="img"> -->
+                </a>                
                 </div>
               </div>
             </div>
           </div>
-          <?php } ?>	
-          <!-- end contact content -->
-         </div>
-       </div>
-     </div>
-   </div>
- </section>
- <!-- End contact  -->
- 
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End about us -->
+
+  <!-- Start about us counter -->
+  
+  <!-- End latest course section -->
+
+  <!-- Start our teacher -->
+  
+  <!-- End our teacher -->
+
+  <!-- Start testimonial -->
+  
+  <!-- End from blog -->
 
   <!-- Start footer -->
   <footer id="mu-footer">
@@ -202,30 +281,51 @@
           <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="mu-footer-widget">
-                <h4>Information</h4>
+                <h4>Program Sarjana</h4>
+                <?php
+                require_once "db_connection/konek.php";
+                $query = mysqli_query($mysqli, "SELECT * FROM program_studi ORDER BY id");
+                while ($hasil = mysqli_fetch_array($query)) { ?>
+                
                 <ul>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="">Features</a></li>
-                  <li><a href="">Course</a></li>
-                  <li><a href="">Event</a></li>
-                  <li><a href="">Sitemap</a></li>
-                  <li><a href="">Term Of Use</a></li>
+                  <li><a href="#"><?php echo $hasil['nama_program_studi']?></a></li>
+                  
+                  <!-- <li><a href="">Teknik Elektronika</a></li>
+                  <li><a href="">Sistem Kelistrikan</a></li>
+                  <li><a href="">Jaringan Telekomunikasi Digital</a></li>
+                  <li><a href="">Teknik Informatika</a></li>
+                  <li><a href="">Teknik Mesin Produksi dan perawatan</a></li>
+                  <li><a href="">Teknik Otomotif Elektronik</a></li>
+                  <li><a href="">Manajemen Rekayasa Konstruksi</a></li>
+                  <li><a href="">Teknik Kimia Industri</a></li>
+                  <li><a href="">Akuntansi Manajemen</a></li>
+                  <li><a href="">Manajemen Pemasaran</a></li>
+                  <li><a href="">Keuangan</a></li> -->
                 </ul>
+                <?php } ?>
               </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="mu-footer-widget">
-                <h4>Student Help</h4>
+                <h4>Program Diploma</h4>
                 <ul>
-                  <li><a href="">Get Started</a></li>
-                  <li><a href="#">My Questions</a></li>
-                  <li><a href="">Download Files</a></li>
-                  <li><a href="">Latest Course</a></li>
-                  <li><a href="">Academic News</a></li>                  
+                  <li><a href="">Teknik Elektronika</a></li>
+                  <li><a href="">Teknik Listrik</a></li>
+                  <li><a href="">Teknik Telekomunikasi</a></li>
+                  <li><a href="">Teknik Informatika</a></li>
+                  <li><a href="">Manajemen Informatika</a></li>
+                  <li><a href="">Teknik Mesin</a></li>
+                  <li><a href="">Teknik Sipil</a></li>
+                  <li><a href="">Teknik Kronstruksi Jalan, Jembatan, dan Bangunan Air</a></li>
+                  <li><a href="">Manajemen Rekayasa Konstruksi</a></li>
+                  <li><a href="">Teknik Kimia</a></li>
+                  <li><a href="">Akuntansi</a></li>
+                  <li><a href="">Administrasi Bisnis</a></li>
+                  <li><a href="">Bahasa Inggris</a></li>                  
                 </ul>
               </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3">
+            <!-- <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="mu-footer-widget">
                 <h4>News letter</h4>
                 <p>Get latest update, news & academic offers</p>
@@ -234,7 +334,7 @@
                   <button class="mu-subscribe-btn" type="submit">Subscribe!</button>
                 </form>               
               </div>
-            </div>
+            </div> -->
             <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="mu-footer-widget">
                 <h4>Contact</h4>
@@ -255,18 +355,13 @@
     <div class="mu-footer-bottom">
       <div class="container">
         <div class="mu-footer-bottom-area">
-          <p>&copy; All Right Reserved. Designed by <a href="http://www.markups.io/" rel="nofollow">MarkUps.io</a></p>
+          <!-- <p>&copy; All Right Reserved. Designed by <a href="http://www.markups.io/" rel="nofollow">MarkUps.io</a></p> -->
         </div>
       </div>
     </div>
     <!-- end footer bottom -->
   </footer>
   <!-- End footer -->
-
-
-
-
-
   
   <!-- jQuery library -->
   <script src="assets/js/jquery.min.js"></script>  
@@ -281,7 +376,8 @@
   <script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
   <!-- Add fancyBox -->        
   <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
-
+  
+  
   <!-- Custom js -->
   <script src="assets/js/custom.js"></script> 
 

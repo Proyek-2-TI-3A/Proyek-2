@@ -174,14 +174,14 @@
                         </figure>
                         <div class="mu-latest-course-single-content">
                           <?php
-                            require_once "db_connection/konek.php";
-                            require "get-id.php";
-                            if (isset($_GET['id'])) {
-                              $id = $_GET['id'];
-                              $query = mysqli_query($mysqli, "SELECT * FROM Kampus WHERE id = '$id'");
-                              while($hasil  = mysqli_fetch_assoc($query)) {
+                            require "db_connection/konek.php";
+                            // require_once "campus-list.php";
+                            if (isset($_GET['hasil'])) {
+                              $id = $_GET['hasil'];
+                              $query = mysqli_query($mysqli, "SELECT * FROM Kampus WHERE id = $id");
+                              while($hasil = mysqli_fetch_assoc($query)) {
                           ?>
-                          <h2><a href="#"><?php echo $hasil['nama_kampus']?></a></h2>
+                          <h2><a href=""><?php echo $hasil['nama_kampus']?></a></h2>
                           <h4>Campus Information</h4>
                           <p><?php echo $hasil['deskripsi_singkat']?></p>
                           <h4>Description</h4>
