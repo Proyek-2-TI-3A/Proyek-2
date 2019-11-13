@@ -141,7 +141,7 @@
          <div class="mu-page-breadcrumb-area">
            <h2>List Kampus</h2>
            <ol class="breadcrumb">
-            <li><a href="#">Home</a></li>            
+            <li class="active"><a href="index.php">Home</a></li>            
             <li class="active">List Kampus</li>
           </ol>
          </div>
