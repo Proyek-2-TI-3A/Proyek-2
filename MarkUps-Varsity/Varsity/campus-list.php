@@ -177,7 +177,7 @@
               <div class="col-md-6">
                 <div class="col-lg-6 col-md-3 col-sm-3">
                     <ul>
-                      <li><a href="course-detail.php"?hasil=<?php echo $hasil['id'];?>><?php echo $hasil['nama_kampus'];?></a></li>
+                      <li><a href="course-detail.php?hasil=<?php echo $hasil['id'];?>"><?php echo $hasil['nama_kampus'];?></a></li>
                     </ul>
                 </div>
                 </div>
