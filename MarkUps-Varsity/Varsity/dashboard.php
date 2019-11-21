@@ -128,7 +128,11 @@
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
-                        
+                        <li>
+                           <a href="">
+                               <p>Account</p>
+                            </a>
+                        </li>
                         
                         <li>
                             <a href="#">
