@@ -145,7 +145,7 @@
       <div class="mu-slider-content">
         <h4>Selamat Datang di Dunia Pendidikan</h4>
         <span></span>
-        <h3>Kami akan membantu anda belajar</h3>
+        <h2>Membantu anda belajar</h2>
         <p>Mempunya visi misi dan berkompeten untuk membantu keahlian yang dipilih dalam kejuaruan</p>
         <a href="#" class="mu-read-more-btn">Read More</a>
       </div>
