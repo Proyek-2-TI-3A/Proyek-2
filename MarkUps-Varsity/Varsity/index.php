@@ -139,13 +139,13 @@
     <div class="mu-slider-single">
       <div class="mu-slider-img">
         <figure>
-          <img src="assets/img/pol 1.png" alt="img">
+          <img src="assets/img/brawi1.jpg" alt="img">
         </figure>
       </div>
       <div class="mu-slider-content">
         <h4>Selamat Datang di Dunia Pendidikan</h4>
         <span></span>
-        <h2>Kami akan membantu anda belajar</h2>
+        <h3>Kami akan membantu anda belajar</h3>
         <p>Mempunya visi misi dan berkompeten untuk membantu keahlian yang dipilih dalam kejuaruan</p>
         <a href="#" class="mu-read-more-btn">Read More</a>
       </div>
