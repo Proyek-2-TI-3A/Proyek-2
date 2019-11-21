@@ -75,12 +75,7 @@
                         <p>Typography</p>
                     </a>
                 </li>
-                <li>
-                    <a href="icons.html">
-                        <i class="pe-7s-science"></i>
-                        <p>Icons</p>
-                    </a>
-                </li>
+                
                 <li>
                     <a href="maps.html">
                         <i class="pe-7s-map-marker"></i>
@@ -93,12 +88,7 @@
                         <p>Notifications</p>
                     </a>
                 </li>
-				<li class="active-pro">
-                    <a href="upgrade.html">
-                        <i class="pe-7s-rocket"></i>
-                        <p>Upgrade to PRO</p>
-                    </a>
-                </li>
+				
             </ul>
     	</div>
     </div>
