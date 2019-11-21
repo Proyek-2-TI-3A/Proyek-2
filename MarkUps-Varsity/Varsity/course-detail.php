@@ -167,10 +167,6 @@
                       <div class="mu-latest-course-single">
                         <figure class="mu-latest-course-img">
                           <a href="#"><img src="assets/img/courses/polinema.jpg" alt="img"></a>
-                          <figcaption class="mu-latest-course-imgcaption">
-                            <a href="#">Drawing</a>
-                            <span><i class="fa fa-clock-o"></i>90Days</span>
-                          </figcaption>
                         </figure>
                         <div class="mu-latest-course-single-content">
                           <?php

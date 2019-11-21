@@ -13,18 +13,23 @@
     <link id="forlogin" href="assets/css/login.css" rel="stylesheet"/>
         <body>
                 <div class="wrapper">
+                    <?php
+                      session_start();
+
+                      ob_start();
+
+                      include ("db_connection/konek.php");
+                    ?>
                         <form class="form-signin" METHOD="POST">       
                           <h2 class="form-signin-heading">Please login</h2>
-                          <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
-                          <input type="password" class="form-control" name="password" placeholder="Password" required=""/>      
+                          <input type="text" class="form-control" name="username" id="username" placeholder="Username"/>
+                          <input type="password" class="form-control" name="password"  id="password" placeholder="Password" required=""/>      
                           <label class="checkbox">
                             <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
                           </label>
-                          <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Login</button>   
+                          <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit" id="submit">Login</button>   
                         </form>
-                      </div>
-                      <?php       
-                      include ("db_connection/konek.php");
+                        <?php       
                           error_reporting (E_ALL ^ E_WARNING || E_NOTICE);
                           if(isset($_POST['submit'])){
                             $username = $_POST['username'];
@@ -43,13 +48,14 @@
                               session_start();
                               echo "<script>alert('Login Sukses')</script>";
                               session_destroy();
-                              echo "<script>location='index.php?login=done'</script>";
+                              echo "<script>location='index.php?logintest=done'</script>";
                             }else{
                               echo "<br><div class='alert alert-danger'>Login Gagal</div>";
                               header ("meta http-equiv='refresh' content='1;url=login2.php'>");
                             }
                          }
-				              ?> 
+				              ?>
+                      </div> 
         </body>
     </head>
 </html>
