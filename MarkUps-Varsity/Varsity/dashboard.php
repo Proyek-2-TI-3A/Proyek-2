@@ -42,6 +42,23 @@
         Tip 2: you can also add an image using data-image tag
 
     -->
+    <?php
+	error_reporting (E_ALL ^ E_WARNING || E_NOTICE);
+		session_start();
+		ob_start();
+	//ini
+	// if(isset($_SESSION['pegawai'])) {
+	// 	echo "<script>alert('Anda harus login')</script>";
+	// 	echo "<script>location='login2.php'</script>";
+	// 	header('location:login2.php');
+	// 	exit();
+	// }else{
+	// }
+
+	$login = LOGIN;
+
+		// echo "Welcome" .$_SESSION['username'];
+	?>
 
     	<div class="sidebar-wrapper">
             <div class="logo">
@@ -121,7 +138,7 @@
 
                         <li>
                            <a href="">
-                               <p></p>
+                               <p><?=$_SESSION['username']?></p>
                             </a>
                         </li>
                         
