@@ -57,12 +57,7 @@
                         <p>Dashboard</p>
                     </a>
                 </li>
-                <li>
-                    <a href="user.html">
-                        <i class="pe-7s-user"></i>
-                        <p>User Profile</p>
-                    </a>
-                </li>
+                
                 <li>
                     <a href="table.html">
                         <i class="pe-7s-note2"></i>
@@ -120,7 +115,13 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li>
                            <a href="">
-                               <p>Account</p>
+                               <p>Welcome</p>
+                            </a>
+                        </li>
+
+                        <li>
+                           <a href="">
+                               <p></p>
                             </a>
                         </li>
                         
