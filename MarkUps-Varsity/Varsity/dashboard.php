@@ -134,7 +134,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         
                         <li>
-                           <a href="">
+                           <a> 
                                <p><?=$_SESSION['login_user']?></p>
                             </a>
                         </li>
