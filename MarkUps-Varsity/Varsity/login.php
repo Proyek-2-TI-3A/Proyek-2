@@ -32,7 +32,7 @@
 <html>
    
    <head>
-      <title>Login Page</title>
+      <title>Login Admin</title>
       
     <link href="assets/css/font-awesome.css" rel="stylesheet">
     <!-- Bootstrap -->
