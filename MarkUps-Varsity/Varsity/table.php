@@ -225,24 +225,22 @@
                                 <p class="category">Here is a subtitle for this table</p>
                             </div>
                             <div class="content table-responsive table-full-width">
-                                <form action="crud/input_campus.php" method="POST">
+                                <form action="crud/input_campus.php" method="post">
                                     <div class="form-group">
                                         <label for="nama_kampus">Nama Kampus</label>
                                         <input type="text" class="form-control" id="nama_kampus" name="nama_kampus" placeholder="Nama Kampus">
                                     </div>
                                     <div class="form-group">
                                         <label for="deskripsi_singkat">Deskripsi Singkat</label>
-                                        <input type="textarea" class="form-control" id="deskripsi_singkat" name="deskripsi_singkat" placeholder="Deskripsi Singkat">
+                                        <input type="text" class="form-control" id="deskripsi_singkat" name="deskripsi_singkat" placeholder="Deskripsi Singkat">
                                     </div>
                                     <div class="form-group">
                                         <label for="deskripsi">Deskripsi</label>
                                         <textarea class="form-control" id="deskripsi" name="deskripsi"></textarea>
                                         <!-- <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input"> -->
                                     </div>
-                                    <div class="form-group">
-                                        <input type="submit" value="SUBMIT" name="tambah">
+                                        <input type="submit" value="SUBMIT" name="TAMBAH" id="TAMBAH">
                                         <input type="reset">
-                                    </div>
                                 </form>
 
                             </div>
