@@ -4,7 +4,7 @@
 
 <?php
     include('session.php');
-    session_start();
+    // session_start();
     error_reporting (E_ALL ^ E_WARNING || E_NOTICE);
 	// error_reporting (E_ALL ^ E_WARNING || E_NOTICE);
 	// 	session_start();
@@ -137,15 +137,10 @@
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
+                        
                         <li>
                            <a href="">
-                               <p>Welcome</p>
-                            </a>
-                        </li>
-
-                        <li>
-                           <a href="">
-                               <p><?=$_SESSION['username']?></p>
+                               <p><?=$_SESSION['login_user']?></p>
                             </a>
                         </li>
                         
