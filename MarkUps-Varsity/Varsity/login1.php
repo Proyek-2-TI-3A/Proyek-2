@@ -1,5 +1,5 @@
 <?php
-   include ("config.php");
+   include ("db_connection/config.php");
    session_start();
    error_reporting (E_ALL ^ E_WARNING || E_NOTICE);
    

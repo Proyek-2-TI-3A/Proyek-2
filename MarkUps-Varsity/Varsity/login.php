@@ -34,7 +34,7 @@
 
                       ob_start();
 
-                      include ("db_connection/konek.php");    
+                      include ("db_connection/config.php");    
                           error_reporting (E_ALL ^ E_WARNING || E_NOTICE);
                           if(isset($_POST['submit'])){
                             $username = $_POST['username'];
