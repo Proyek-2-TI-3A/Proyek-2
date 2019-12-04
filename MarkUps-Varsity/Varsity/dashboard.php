@@ -1,21 +1,11 @@
-<?php
-include('session.php');
-?>
-<!DOCTYPE html>
-<html>
-	<head>
-	  <title>Nyekrip Halaman Khusus</title>
-	  <link href="style.css" rel="stylesheet" type="text/css">
-	</head>
-<body>
-	<div id="profile">
-	  <b id="welcome">Selamat Datang : <i><?php echo $login_session; ?></i></b>
-	  <b id="logout"><a href="logout.php">Log Out</a></b>
-	</div>
-</body>
-</html>
+
+
+
 
 <?php
+    include('session.php');
+    session_start();
+    error_reporting (E_ALL ^ E_WARNING || E_NOTICE);
 	// error_reporting (E_ALL ^ E_WARNING || E_NOTICE);
 	// 	session_start();
 	// 	ob_start();
