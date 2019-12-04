@@ -1,3 +1,36 @@
+<?php
+include('session.php');
+?>
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Nyekrip Halaman Khusus</title>
+	  <link href="style.css" rel="stylesheet" type="text/css">
+	</head>
+<body>
+	<div id="profile">
+	  <b id="welcome">Selamat Datang : <i><?php echo $login_session; ?></i></b>
+	  <b id="logout"><a href="logout.php">Log Out</a></b>
+	</div>
+</body>
+</html>
+
+<?php
+	// error_reporting (E_ALL ^ E_WARNING || E_NOTICE);
+	// 	session_start();
+	// 	ob_start();
+	// //ini
+	// // if(isset($_SESSION['pegawai'])) {
+	// // 	echo "<script>alert('Anda harus login')</script>";
+	// // 	echo "<script>location='login2.php'</script>";
+	// // 	header('location:login2.php');
+	// // 	exit();
+	// // }else{
+	// // }
+
+    // $login = LOGIN;
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -42,23 +75,7 @@
         Tip 2: you can also add an image using data-image tag
 
     -->
-    <?php
-	error_reporting (E_ALL ^ E_WARNING || E_NOTICE);
-		session_start();
-		ob_start();
-	//ini
-	// if(isset($_SESSION['pegawai'])) {
-	// 	echo "<script>alert('Anda harus login')</script>";
-	// 	echo "<script>location='login2.php'</script>";
-	// 	header('location:login2.php');
-	// 	exit();
-	// }else{
-	// }
-
-	$login = LOGIN;
-
-		// echo "Welcome" .$_SESSION['username'];
-	?>
+    
 
     	<div class="sidebar-wrapper">
             <div class="logo">

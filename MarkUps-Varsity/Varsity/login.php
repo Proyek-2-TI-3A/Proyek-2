@@ -27,15 +27,20 @@
                           <label class="checkbox">
                             <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
                           </label>
-                          <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit" id="submit">Login</button>   
+                          <button class="btn btn-lg btn-primary btn-block" type="submit" name="login" value="Log in">Login</button>   
                         </form>
-                        <?php       
+                        <?php   
+                        session_start();
+
+                      ob_start();
+
+                      include ("db_connection/konek.php");    
                           error_reporting (E_ALL ^ E_WARNING || E_NOTICE);
                           if(isset($_POST['submit'])){
                             $username = $_POST['username'];
-                            $pwd = $_POST['password'];
+                            $password = $_POST['password'];
                             // $hash = password_hash($password, PASSWORD_DEFAULT);
-                            $query = "SELECT * FROM admin WHERE username = '$username' && password = '$pwd'";
+                            $query = "SELECT * FROM admin WHERE username = '$username' && password = '$password'";
                             $data = mysqli_query($query);
                             $total = mysqli_num_rows($data);
 
@@ -43,15 +48,17 @@
                               $_SESSION['username'] = $username;
                               // echo "<br><div class='alert alert-info'>Login Sukses</div>";
                               // echo ("meta http-equiv='refresh' content='1;url=index.php'>");
-                              // header('location:index.php');
-                              // echo "<script>location='index.php'</script>";
-                              session_start();
                               echo "<script>alert('Login Sukses')</script>";
-                              session_destroy();
-                              echo "<script>location='index.php?logintest=done'</script>";
+                              header('location:dashboard.php');
+                              // echo "<script>location='index.php'</script>";
+                              // session_start();
+                              
+                              // echo "<script>location='dashboard.php'</script>"
+                              // session_destroy();
+                              // echo "<script>location='dashboard.php?logintest=done'</script>";
                             }else{
                               echo "<br><div class='alert alert-danger'>Login Gagal</div>";
-                              header ("meta http-equiv='refresh' content='1;url=login2.php'>");
+                              header ("meta http-equiv='refresh' content='1;url=login.php'>");
                             }
                          }
 				              ?>
