@@ -68,7 +68,7 @@
                 <div class="mu-header-top-right">
                   <nav>
                     <ul class="mu-top-social-nav">
-                      <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                      <li><a href="https://www.facebook.com/sman1singosari/"><span class="fa fa-facebook"></span></a></li>
                       <li><a href="#"><span class="fa fa-twitter"></span></a></li>
                       <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
                       <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
@@ -160,8 +160,9 @@
           <!-- start title -->
           <div class="mu-title">
             <h2>List</h2>
-            <p>Informasi untuk kampus-kampus area Malang yang sudah tersedia dibawah
-              untuk itu anda dapat melihat informasi mengenai kampus yang ada di malang </p>
+            <p>Berisi tentang Informasi mengenai berbagai Universitas atau Politeknik Yang berada
+               di Kota Malang.
+            </p>
           </div>
           <!-- end title -->
           <!-- start contact content -->
