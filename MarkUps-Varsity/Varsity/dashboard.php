@@ -2,19 +2,6 @@
     include('session.php');
     // session_start();
     error_reporting (E_ALL ^ E_WARNING || E_NOTICE);
-	// error_reporting (E_ALL ^ E_WARNING || E_NOTICE);
-	// 	session_start();
-	// 	ob_start();
-	// //ini
-	// // if(isset($_SESSION['pegawai'])) {
-	// // 	echo "<script>alert('Anda harus login')</script>";
-	// // 	echo "<script>location='login2.php'</script>";
-	// // 	header('location:login2.php');
-	// // 	exit();
-	// // }else{
-	// // }
-
-    // $login = LOGIN;
 ?>
 
 <!doctype html>
@@ -72,14 +59,14 @@
 
             <ul class="nav">
                 <li class="active">
-                    <a href="dashboard.html">
+                    <a href="#">
                         <i class="pe-7s-graph"></i>
                         <p>Dashboard</p>
                     </a>
                 </li>
                 
                 <li>
-                    <a href="table.html">
+                    <a href="table.php">
                         <i class="pe-7s-note2"></i>
                         <p>List Kampus</p>
                     </a>
