@@ -170,7 +170,7 @@
     // select all tasks if page is visited or refreshed
     
     require "db_connection/konek.php";
-    $query = mysqli_query($mysqli, "SELECT * FROM Kampus ORDER BY id");
+    $query = mysqli_query($con, "SELECT * FROM Kampus ORDER BY id");
 		// $tasks = mysqli_query($db, "SELECT * FROM tasks");
     while ($hasil = mysqli_fetch_array($query)) { ?>
           <div class="mu-contact-content">           

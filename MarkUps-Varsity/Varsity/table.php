@@ -1,3 +1,6 @@
+<?php
+    include ('db_connection/konek.php');
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -196,7 +199,7 @@
                                     <tbody>
                                     <?php
                                         require_once 'db_connection/konek.php';
-                                        $query = mysqli_query($mysqli, "SELECT * FROM kampus");
+                                        $query = mysqli_query($con, "SELECT * FROM kampus");
                                         while($hasil  = mysqli_fetch_assoc($query)) {
                                     ?>
                                         <tr>
@@ -225,24 +228,22 @@
                                 <p class="category">Here is a subtitle for this table</p>
                             </div>
                             <div class="content table-responsive table-full-width">
-                                <form action="crud/input_campus.php" method="post">
+                                <form method="POST" action="crud/input_campus.php">
                                     <div class="form-group">
-                                        <label for="nama_kampus">Nama Kampus</label>
+                                        Nama Kampus
                                         <input type="text" class="form-control" id="nama_kampus" name="nama_kampus" placeholder="Nama Kampus">
                                     </div>
                                     <div class="form-group">
-                                        <label for="deskripsi_singkat">Deskripsi Singkat</label>
+                                        Deskripsi Singkat
                                         <input type="text" class="form-control" id="deskripsi_singkat" name="deskripsi_singkat" placeholder="Deskripsi Singkat">
                                     </div>
                                     <div class="form-group">
-                                        <label for="deskripsi">Deskripsi</label>
+                                        Deskripsi
                                         <textarea class="form-control" id="deskripsi" name="deskripsi"></textarea>
-                                        <!-- <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input"> -->
                                     </div>
-                                        <input type="submit" value="SUBMIT" name="TAMBAH" id="TAMBAH">
+                                        <input type="submit" value="SUBMIT" name="SUBMIT">
                                         <input type="reset">
                                 </form>
-
                             </div>
                         </div>
                     </div>
