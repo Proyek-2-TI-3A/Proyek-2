@@ -1,8 +1,8 @@
 <?php
-	$mysqli = mysqli_connect('localhost', 'root', '', 'websekolah');
+	$con = mysqli_connect('localhost', 'root', '', 'websekolah');
 	
-	if($mysqli){
-		// echo "sudah connect";
+	if($con){
+		echo "sudah connect";
 		
 	}else{
 		echo "belum konek";

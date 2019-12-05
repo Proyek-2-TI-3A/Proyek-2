@@ -174,7 +174,7 @@
                             // require_once "campus-list.php";
                             if (isset($_GET['hasil'])) {
                               $id = $_GET['hasil'];
-                              $query = mysqli_query($mysqli, "SELECT * FROM Kampus WHERE id = $id");
+                              $query = mysqli_query($con, "SELECT * FROM Kampus WHERE id = $id");
                               while($hasil = mysqli_fetch_assoc($query)) {
                           ?>
                           <h2><a href=""><?php echo $hasil['nama_kampus']?></a></h2>
