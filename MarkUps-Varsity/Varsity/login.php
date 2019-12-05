@@ -22,7 +22,9 @@
         //  session_register("username");
          $_SESSION['login_user'] = $username;
          
+         // echo "<br><div class='alert alert-info'>Login Sukses</div>";
          header("location: dashboard.php");
+         
         
       }else {
          $error = "Your Login Name or Password is invalid";
@@ -32,7 +34,7 @@
 <html>
    
    <head>
-      <title>Login Page</title>
+      <title>Login Admin</title>
       
     <link href="assets/css/font-awesome.css" rel="stylesheet">
     <!-- Bootstrap -->
