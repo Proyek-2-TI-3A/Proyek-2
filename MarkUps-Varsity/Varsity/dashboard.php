@@ -1,21 +1,7 @@
 <?php
-include('session.php');
-?>
-<!DOCTYPE html>
-<html>
-	<head>
-	  <title>Nyekrip Halaman Khusus</title>
-	  <link href="style.css" rel="stylesheet" type="text/css">
-	</head>
-<body>
-	<div id="profile">
-	  <b id="welcome">Selamat Datang : <i><?php echo $login_session; ?></i></b>
-	  <b id="logout"><a href="logout.php">Log Out</a></b>
-	</div>
-</body>
-</html>
-
-<?php
+    include('session.php');
+    // session_start();
+    error_reporting (E_ALL ^ E_WARNING || E_NOTICE);
 	// error_reporting (E_ALL ^ E_WARNING || E_NOTICE);
 	// 	session_start();
 	// 	ob_start();
@@ -38,7 +24,7 @@ include('session.php');
 	<link rel="icon" type="image/png" href="assets/img/favicon.ico">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-	<title>Light Bootstrap Dashboard by Creative Tim</title>
+	<title>Dashboard Creative Tim</title>
 
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
@@ -95,13 +81,13 @@ include('session.php');
                 <li>
                     <a href="table.html">
                         <i class="pe-7s-note2"></i>
-                        <p>Table List</p>
+                        <p>List Kampus</p>
                     </a>
                 </li>
                 <li>
                     <a href="typography.html">
                         <i class="pe-7s-news-paper"></i>
-                        <p>Typography</p>
+                        <p>List Program Studi</p>
                     </a>
                 </li>
                 
@@ -111,12 +97,7 @@ include('session.php');
                         <p>Maps</p>
                     </a>
                 </li>
-                <li>
-                    <a href="notifications.html">
-                        <i class="pe-7s-bell"></i>
-                        <p>Notifications</p>
-                    </a>
-                </li>
+                
 				
             </ul>
     	</div>
@@ -147,20 +128,15 @@ include('session.php');
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
+                        
                         <li>
-                           <a href="">
-                               <p>Welcome</p>
-                            </a>
-                        </li>
-
-                        <li>
-                           <a href="">
-                               <p><?=$_SESSION['username']?></p>
+                           <a> 
+                               <p><?=$_SESSION['login_user']?></p>
                             </a>
                         </li>
                         
                         <li>
-                            <a href="#">
+                            <a href="logout.php">
                                 <p>Log out</p>
                             </a>
                         </li>

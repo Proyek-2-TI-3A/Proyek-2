@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 13 Nov 2019 pada 01.44
--- Versi server: 10.1.39-MariaDB
--- Versi PHP: 7.1.29
+-- Generation Time: Dec 04, 2019 at 03:07 AM
+-- Server version: 10.1.28-MariaDB
+-- PHP Version: 7.1.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,25 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kampus`
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `username` varchar(20) NOT NULL,
+  `password` varchar(8) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`username`, `password`) VALUES
+('admin', 'admin');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `kampus`
 --
 
 CREATE TABLE `kampus` (
@@ -36,7 +54,7 @@ CREATE TABLE `kampus` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `kampus`
+-- Dumping data for table `kampus`
 --
 
 INSERT INTO `kampus` (`id`, `nama_kampus`, `deskripsi`, `deskripsi_singkat`) VALUES
@@ -46,7 +64,7 @@ INSERT INTO `kampus` (`id`, `nama_kampus`, `deskripsi`, `deskripsi_singkat`) VAL
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `program_studi`
+-- Table structure for table `program_studi`
 --
 
 CREATE TABLE `program_studi` (
@@ -56,7 +74,7 @@ CREATE TABLE `program_studi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data untuk tabel `program_studi`
+-- Dumping data for table `program_studi`
 --
 
 INSERT INTO `program_studi` (`id`, `nama_program_studi`, `tingkat`) VALUES
@@ -78,29 +96,29 @@ INSERT INTO `program_studi` (`id`, `nama_program_studi`, `tingkat`) VALUES
 --
 
 --
--- Indeks untuk tabel `kampus`
+-- Indexes for table `kampus`
 --
 ALTER TABLE `kampus`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indeks untuk tabel `program_studi`
+-- Indexes for table `program_studi`
 --
 ALTER TABLE `program_studi`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `kampus`
+-- AUTO_INCREMENT for table `kampus`
 --
 ALTER TABLE `kampus`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT untuk tabel `program_studi`
+-- AUTO_INCREMENT for table `program_studi`
 --
 ALTER TABLE `program_studi`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
