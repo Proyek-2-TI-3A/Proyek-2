@@ -183,7 +183,12 @@
                                     </div>
                                     <div class="form-group">
                                         Tingkat
-                                        <input type="text" class="form-control" id="tingkat" name="tingkat" placeholder="Tingkat Program Studi">
+                                        <!-- <input type="text" class="form-control" id="tingkat" name="tingkat" placeholder="Tingkat Program Studi">
+                                     -->
+                                     <br></br>
+                                     <input type="radio" name="tingkat" id="tingkat" value="Sarjana">Sarjana
+                                     <br></br>
+                                        <input type="radio" name="tingkat" id="tingkat" value="Diploma">Diploma
                                     </div>
                                         <input type="submit" value="SUBMIT" name="SUBMIT">
                                         <input type="reset">

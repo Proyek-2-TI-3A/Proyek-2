@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">    
-    <title>Education City | Univeritas Negeri Malang(UM) </title>
+    <title>Education City | Campus Details </title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/img/favicon1.png" type="image/x-icon">
@@ -137,10 +137,10 @@
      <div class="row">
        <div class="col-md-12">
          <div class="mu-page-breadcrumb-area">
-           <h2>Course Detail</h2>
+           <h2>Campus Details</h2>
            <ol class="breadcrumb">
-            <li><a href="#">Home</a></li>            
-            <li class="active">Course Detail</li>
+            <li><a href="index.php">Home</a></li>            
+            <li class="active">Campus Details</li>
           </ol>
          </div>
        </div>

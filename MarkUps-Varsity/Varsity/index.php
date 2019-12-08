@@ -284,23 +284,11 @@
                 <h4>Program Sarjana</h4>
                 <?php
                 require_once "db_connection/konek.php";
-                $query = mysqli_query($con, "SELECT * FROM program_studi WHERE tingkat = 'Sarjana'");
+                $query = mysqli_query($con, "SELECT * FROM program_studi WHERE tingkat = 'Sarjana' ORDER BY nama_program_studi ASC");
                 while ($hasil = mysqli_fetch_array($query)) { ?>
                 
                 <ul>
                   <li><a href="#"><?php echo $hasil['nama_program_studi']?></a></li>
-                  
-                  <!-- <li><a href="">Teknik Elektronika</a></li>
-                  <li><a href="">Sistem Kelistrikan</a></li>
-                  <li><a href="">Jaringan Telekomunikasi Digital</a></li>
-                  <li><a href="">Teknik Informatika</a></li>
-                  <li><a href="">Teknik Mesin Produksi dan perawatan</a></li>
-                  <li><a href="">Teknik Otomotif Elektronik</a></li>
-                  <li><a href="">Manajemen Rekayasa Konstruksi</a></li>
-                  <li><a href="">Teknik Kimia Industri</a></li>
-                  <li><a href="">Akuntansi Manajemen</a></li>
-                  <li><a href="">Manajemen Pemasaran</a></li>
-                  <li><a href="">Keuangan</a></li> -->
                 </ul>
                 <?php } ?>
               </div>
@@ -308,21 +296,16 @@
             <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="mu-footer-widget">
                 <h4>Program Diploma</h4>
+                <?php
+                require_once "db_connection/konek.php";
+                $query = mysqli_query($con, "SELECT * FROM program_studi WHERE tingkat = 'Diploma' ORDER BY nama_program_studi ASC");
+                while ($hasil = mysqli_fetch_array($query)) { ?>
+                
                 <ul>
-                  <li><a href="">Teknik Elektronika</a></li>
-                  <li><a href="">Teknik Listrik</a></li>
-                  <li><a href="">Teknik Telekomunikasi</a></li>
-                  <li><a href="">Teknik Informatika</a></li>
-                  <li><a href="">Manajemen Informatika</a></li>
-                  <li><a href="">Teknik Mesin</a></li>
-                  <li><a href="">Teknik Sipil</a></li>
-                  <li><a href="">Teknik Kronstruksi Jalan, Jembatan, dan Bangunan Air</a></li>
-                  <li><a href="">Manajemen Rekayasa Konstruksi</a></li>
-                  <li><a href="">Teknik Kimia</a></li>
-                  <li><a href="">Akuntansi</a></li>
-                  <li><a href="">Administrasi Bisnis</a></li>
-                  <li><a href="">Bahasa Inggris</a></li>                  
+                  <li><a href="#"><?php echo $hasil['nama_program_studi']?></a></li>
                 </ul>
+                <?php } ?>
+                
               </div>
             </div>
             <!-- <div class="col-lg-3 col-md-3 col-sm-3">
