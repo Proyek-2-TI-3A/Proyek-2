@@ -104,7 +104,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-            <li class="active"><a href="index.html">Home</a></li>            
+            <li class="active"><a href="#">Home</a></li>            
             <li>
               <a href="campus-list.php" class="active">Perguruan Tinggi</a>
             </li>           
@@ -284,7 +284,7 @@
                 <h4>Program Sarjana</h4>
                 <?php
                 require_once "db_connection/konek.php";
-                $query = mysqli_query($mysqli, "SELECT * FROM program_studi WHERE tingkat = 'Sarjana'");
+                $query = mysqli_query($con, "SELECT * FROM program_studi WHERE tingkat = 'Sarjana'");
                 while ($hasil = mysqli_fetch_array($query)) { ?>
                 
                 <ul>

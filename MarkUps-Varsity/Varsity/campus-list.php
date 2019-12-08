@@ -104,14 +104,14 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-            <li><a href="index.html">Home</a></li>            
-            <li class="active">
-              <a href="#">Perguruan Tinggi</a>
+            <li class="active"><a href="index.php">Home</a></li>            
+            <li>
+              <a href="#" class="active">Perguruan Tinggi</a>
             </li>           
             <li><a href="gallery.html">Gallery</a></li>            
             <li><a href="contact.html">Contact</a></li>             
             <li><a href="#" id="mu-search-icon"><i class="fa fa-search"></i></a></li>
-          </ul>                      
+          </ul>                     
         </div><!--/.nav-collapse -->        
       </div>     
     </nav>
@@ -168,6 +168,8 @@
           <!-- start contact content -->
           <?php 
     // select all tasks if page is visited or refreshed
+
+    
     
     require "db_connection/konek.php";
     $query = mysqli_query($con, "SELECT * FROM Kampus ORDER BY id");
@@ -175,11 +177,33 @@
     while ($hasil = mysqli_fetch_array($query)) { ?>
           <div class="mu-contact-content">           
             <div class="row">
-              <div class="col-md-6">
-                <div class="col-lg-6 col-md-3 col-sm-3">
-                    <ul>
-                      <li><a href="course-detail.php?hasil=<?php echo $hasil['id'];?>"><?php echo $hasil['nama_kampus'];?></a></li>
-                    </ul>
+              <div class="col-md-50">
+                <div class="col-lg-6 col-md-30 col-sm-3">
+                   <table class="table table-hover table-striped">
+                                    <thead>
+                                    
+                                      <th>Name Kampus</th>
+                                      <th></th>
+                                      <th></th>
+                                      <th></th>
+                                      <th></th>
+                                    </thead>
+                                    <tbody>
+                                    <?php
+                                        require_once 'db_connection/konek.php';
+                                        $query = mysqli_query($con, "SELECT * FROM kampus");
+                                        while($hasil  = mysqli_fetch_assoc($query)) {
+                                    ?>
+                                        <tr>
+                                          <td><a href="course-detail.php?hasil=<?php echo $hasil['id'];?>"><?php echo $hasil['nama_kampus'];?></a></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                          <td></td>
+                                        </tr>
+                                        <?php } ?>
+                                    </tbody>
+                                </table>
                 </div>
                 </div>
               </div>
