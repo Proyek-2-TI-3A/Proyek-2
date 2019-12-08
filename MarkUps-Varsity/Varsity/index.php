@@ -279,17 +279,12 @@
       <div class="container">
         <div class="mu-footer-top-area">
           <div class="row">
-          <div class="col-lg-3 col-md-3 col-sm-3">
-              <div class="mu-footer-widget">
-                 
-              </div>
-            </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="mu-footer-widget">
                 <h4>Program Sarjana</h4>
                 <?php
                 require_once "db_connection/konek.php";
-                $query = mysqli_query($con, "SELECT * FROM program_studi WHERE tingkat = 'Sarjana' ORDER BY nama_program_studi ASC");
+                $query = mysqli_query($con, "SELECT nama_program_studi FROM program_studi WHERE tingkat = 'Sarjana' ORDER BY nama_program_studi ASC");
                 while ($hasil = mysqli_fetch_array($query)) { ?>
                 
                 <ul>
@@ -303,7 +298,7 @@
                 <h4>Program Diploma</h4>
                 <?php
                 require_once "db_connection/konek.php";
-                $query = mysqli_query($con, "SELECT * FROM program_studi WHERE tingkat = 'Diploma' ORDER BY nama_program_studi ASC");
+                $query = mysqli_query($con, "SELECT nama_program_studi FROM program_studi WHERE tingkat = 'Diploma' ORDER BY nama_program_studi ASC");
                 while ($hasil = mysqli_fetch_array($query)) { ?>
                 
                 <ul>
@@ -311,6 +306,12 @@
                 </ul>
                 <?php } ?>
                 
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-sm-3">
+              <div class="mu-footer-widget">
+                 
               </div>
             </div>
             
