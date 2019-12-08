@@ -60,7 +60,7 @@
                   </div>
                   <div class="mu-top-phone">
                     <i class="fa fa-phone"></i>
-                    <span>(568) 986 652</span>
+                    <span>(+62) 341 454113</span>
                   </div>
                 </div>
               </div>
@@ -318,8 +318,8 @@
               <div class="mu-footer-widget">
                 <h4>Contact</h4>
                 <address>
-                  <p>P.O. Box 320, Ross, California 9495, USA</p>
-                  <p>Phone: (415) 453-1568 </p>
+                  <p>Jl. Ki Hajar Dewantara Desa No.1, Tanjung, Banjararum, Kec. Singosari, Malang, Jawa Timur 65153, Indonesia</p>
+                  <p>Phone: (+62) 341 454113 </p>
                   <p>Website: www.markups.io</p>
                   <p>Email: info@markups.io</p>
                 </address>
