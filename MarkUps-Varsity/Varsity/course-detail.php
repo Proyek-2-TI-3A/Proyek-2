@@ -58,7 +58,7 @@
                   </div>
                   <div class="mu-top-phone">
                     <i class="fa fa-phone"></i>
-                    <span>(568) 986 652</span>
+                    <span>(+62) 341 454113</span>
                   </div>
                 </div>
               </div>
@@ -102,7 +102,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-            <li class="active"><a href="index.html">Home</a></li>            
+            <li class="active"><a href="index.php">Home</a></li>            
             <li>
               <a href="campus-list.php" class="active">Perguruan Tinggi</a>
             </li>           
@@ -169,15 +169,22 @@
                             // require_once "campus-list.php";
                             if (isset($_GET['hasil'])) {
                               $id = $_GET['hasil'];
-                              $query = mysqli_query($con, "SELECT * FROM Kampus WHERE id = $id");
-                              while($hasil = mysqli_fetch_assoc($query)) {
+                                $query = mysqli_query($con, "SELECT * FROM Kampus WHERE id = $id");
+                                while($hasil = mysqli_fetch_assoc($query)) {
                           ?>
-                          <h2><a href=""><?php echo $hasil['nama_kampus']?></a></h2>
-                          <h4>Campus Information</h4>
-                          <p><?php echo $hasil['deskripsi_singkat']?></p>
-                          <h4>Description</h4>
-                          <p><?php echo $hasil['deskripsi']?></p>
-                          <?php }}?>
+                                    <h2><a href=""><?php echo $hasil['nama_kampus']?></a></h2>
+                                    <h4>Campus Information</h4>
+                                    <p><?php echo $hasil['deskripsi_singkat']?></p>
+                                    <h4>Description</h4>
+                                    <p><?php echo $hasil['deskripsi']?></p>
+                                <?php }
+                          ?>
+                          
+                          <?php }
+                          else{
+                            echo "<script type='text/javascript'>location='campus-list.php';</script>";
+                          }
+                          ?>
                         </div>
                       </div> 
                     </div>                                   
