@@ -98,7 +98,7 @@
           </button>
           <!-- LOGO -->              
           <!-- TEXT BASED LOGO -->
-          <a class="navbar-brand" href="index.html"><i class="fa fa-university"></i><span>Education City</span></a>
+          <a class="navbar-brand" href="index.php"><i class="fa fa-university"></i><span>Education City</span></a>
           <!-- IMG BASED LOGO  -->
           <!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo"></a> -->
         </div>
@@ -191,7 +191,7 @@
                                     <tbody>
                                     <?php
                                         require_once 'db_connection/konek.php';
-                                        $query = mysqli_query($con, "SELECT * FROM kampus");
+                                        $query = mysqli_query($con, "SELECT * FROM kampus ORDER BY nama_kampus ASC");
                                         while($hasil  = mysqli_fetch_assoc($query)) {
                                     ?>
                                         <tr>
