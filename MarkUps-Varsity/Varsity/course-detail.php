@@ -288,45 +288,46 @@
           <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="mu-footer-widget">
-                <h4>Information</h4>
+                <h4>Program Sarjana</h4>
+                <?php
+                require_once "db_connection/konek.php";
+                $query = mysqli_query($con, "SELECT nama_program_studi FROM program_studi WHERE tingkat = 'Sarjana' ORDER BY nama_program_studi ASC");
+                while ($hasil = mysqli_fetch_array($query)) { ?>
+                
                 <ul>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="">Features</a></li>
-                  <li><a href="">Course</a></li>
-                  <li><a href="">Event</a></li>
-                  <li><a href="">Sitemap</a></li>
-                  <li><a href="">Term Of Use</a></li>
+                  <li><a href="#"><?php echo $hasil['nama_program_studi']?></a></li>
                 </ul>
+                <?php } ?>
               </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="mu-footer-widget">
-                <h4>Student Help</h4>
+                <h4>Program Diploma</h4>
+                <?php
+                require_once "db_connection/konek.php";
+                $query = mysqli_query($con, "SELECT nama_program_studi FROM program_studi WHERE tingkat = 'Diploma' ORDER BY nama_program_studi ASC");
+                while ($hasil = mysqli_fetch_array($query)) { ?>
+                
                 <ul>
-                  <li><a href="">Get Started</a></li>
-                  <li><a href="#">My Questions</a></li>
-                  <li><a href="">Download Files</a></li>
-                  <li><a href="">Latest Course</a></li>
-                  <li><a href="">Academic News</a></li>                  
+                  <li><a href="#"><?php echo $hasil['nama_program_studi']?></a></li>
                 </ul>
+                <?php } ?>
+                
               </div>
             </div>
+
             <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="mu-footer-widget">
-                <h4>News letter</h4>
-                <p>Get latest update, news & academic offers</p>
-                <form class="mu-subscribe-form">
-                  <input type="email" placeholder="Type your Email">
-                  <button class="mu-subscribe-btn" type="submit">Subscribe!</button>
-                </form>               
+                 
               </div>
             </div>
+            
             <div class="col-lg-3 col-md-3 col-sm-3">
               <div class="mu-footer-widget">
                 <h4>Contact</h4>
                 <address>
-                  <p>P.O. Box 320, Ross, California 9495, USA</p>
-                  <p>Phone: (415) 453-1568 </p>
+                  <p>Jl. Ki Hajar Dewantara Desa No.1, Tanjung, Banjararum, Kec. Singosari, Malang, Jawa Timur 65153, Indonesia</p>
+                  <p>Phone: (+62) 341 454113 </p>
                   <p>Website: www.markups.io</p>
                   <p>Email: info@markups.io</p>
                 </address>
