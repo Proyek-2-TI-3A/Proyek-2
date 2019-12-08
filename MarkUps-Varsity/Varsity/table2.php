@@ -61,13 +61,13 @@
                 </li>
                 
                 <li>
-                    <a href="#">
+                    <a href="table.php">
                         <i class="pe-7s-note2"></i>
                         <p>List Kampus</p>
                     </a>
                 </li>
                 <li>
-                    <a href="table2.php">
+                    <a href="#">
                         <i class="pe-7s-news-paper"></i>
                         <p>List Program Studi</p>
                     </a>
@@ -95,7 +95,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Kampus</a>
+                    <a class="navbar-brand" href="#">Program Studi</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-left">
@@ -134,27 +134,29 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="header">
-                                <h4 class="title">List Kampus/Universitas</h4>
+                                <h4 class="title">List Program Studi</h4>
                                 <p class="category">Here is a subtitle for this table</p>
                                 <div class="content table-responsive table-full-width">
                                 <table class="table table-hover table-striped">
                                     <thead>
                                     
-                                    	<th>Name Kampus</th>
+                                        <th>Name Program Studi</th>
+                                        <th>Tingkat</th>
+
                                     </thead>
                                     <tbody>
                                     <?php
                                         require_once 'db_connection/konek.php';
-                                        $query = mysqli_query($con, "SELECT * FROM kampus");
+                                        $query = mysqli_query($con, "SELECT * FROM program_studi");
                                         while($hasil  = mysqli_fetch_assoc($query)) {
                                     ?>
                                         <tr>
-                                        	<td><?php echo $hasil['nama_kampus']?></td>
-                                        	<td></td>
+                                        	<td><?php echo $hasil['nama_program_studi']?></td>
+                                        	<td><?php echo $hasil['tingkat']?></td>
                                         	<td></td>
                                         	<td></td>
                                         	<td><center><a href="crud/edit_campus.php?id=<?php echo $hasil['id'];?>">Edit</a> &nbsp
-                                                        <a href="crud/delete_campus.php?id=<?php echo $hasil['id'];?>">hapus</a>
+                                                        <a href="crud/delete_program.php?id=<?php echo $hasil['id'];?>">hapus</a>
                                                 </center></td>
                                         </tr>
                                         <?php } ?>
@@ -170,22 +172,18 @@
                     <div class="col-md-12">
                         <div class="card card-plain">
                             <div class="header">
-                                <h4 class="title">Form Input Kampus/Universitas</h4>
+                                <h4 class="title">Form Input Program Studi</h4>
                                 <p class="category">Here is a subtitle for this table</p>
                             </div>
                             <div class="content table-responsive table-full-width">
-                                <form method="POST" action="crud/input_campus.php">
+                                <form method="POST" action="crud/input_program.php">
                                     <div class="form-group">
-                                        Nama Kampus
-                                        <input type="text" class="form-control" id="nama_kampus" name="nama_kampus" placeholder="Nama Kampus">
+                                        Nama Program Studi
+                                        <input type="text" class="form-control" id="nama_program_studi" name="nama_program_studi" placeholder="Masukkan Nama Program Studi">
                                     </div>
                                     <div class="form-group">
-                                        Deskripsi Singkat
-                                        <input type="text" class="form-control" id="deskripsi_singkat" name="deskripsi_singkat" placeholder="Deskripsi Singkat">
-                                    </div>
-                                    <div class="form-group">
-                                        Deskripsi
-                                        <textarea class="form-control" id="deskripsi" name="deskripsi"></textarea>
+                                        Tingkat
+                                        <input type="text" class="form-control" id="tingkat" name="tingkat" placeholder="Tingkat Program Studi">
                                     </div>
                                         <input type="submit" value="SUBMIT" name="SUBMIT">
                                         <input type="reset">
@@ -198,8 +196,6 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 </div>
 

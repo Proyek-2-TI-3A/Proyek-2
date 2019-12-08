@@ -72,14 +72,14 @@
                     </a>
                 </li>
                 <li>
-                    <a href="typography.html">
+                    <a href="table2.php">
                         <i class="pe-7s-news-paper"></i>
                         <p>List Program Studi</p>
                     </a>
                 </li>
                 
                 <li>
-                    <a href="maps.html">
+                    <a href="maps.php">
                         <i class="pe-7s-map-marker"></i>
                         <p>Maps</p>
                     </a>
