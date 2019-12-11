@@ -54,7 +54,7 @@
                 <div class="mu-header-top-left">
                   <div class="mu-top-email">
                     <i class="fa fa-envelope"></i>
-                    <span>info@markups.io</span>
+                    <span>SMA1Singosari@gmail.com</span>
                   </div>
                   <div class="mu-top-phone">
                     <i class="fa fa-phone"></i>
@@ -102,9 +102,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-            <li class="active"><a href="index.php">Home</a></li>            
-            <li>
-              <a href="campus-list.php" class="active">Perguruan Tinggi</a>
+            <li class=""><a href="index.php">Home</a></li>            
+            <li class="active">
+              <a href="campus-list.php">Perguruan Tinggi</a>
             </li>           
             <li><a href="gallery.html">Gallery</a></li>            
             <li><a href="contact.html">Contact</a></li>             
@@ -335,8 +335,7 @@
                 <address>
                   <p>Jl. Ki Hajar Dewantara Desa No.1, Tanjung, Banjararum, Kec. Singosari, Malang, Jawa Timur 65153, Indonesia</p>
                   <p>Phone: (+62) 341 454113 </p>
-                  <p>Website: www.markups.io</p>
-                  <p>Email: info@markups.io</p>
+                  
                 </address>
               </div>
             </div>

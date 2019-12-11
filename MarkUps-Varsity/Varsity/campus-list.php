@@ -268,8 +268,7 @@
                 <address>
                   <p>Jl. Ki Hajar Dewantara Desa No.1, Tanjung, Banjararum, Kec. Singosari, Malang, Jawa Timur 65153, Indonesia</p>
                   <p>Phone: (+62) 341 454113 </p>
-                  <p>Website: www.markups.io</p>
-                  <p>Email: info@markups.io</p>
+                  
                 </address>
               </div>
             </div>
