@@ -56,7 +56,7 @@
                 <div class="mu-header-top-left">
                   <div class="mu-top-email">
                     <i class="fa fa-envelope"></i>
-                    <span>info@markups.io</span>
+                    <span>SMA1Singosari@gmail.com</span>
                   </div>
                   <div class="mu-top-phone">
                     <i class="fa fa-phone"></i>
@@ -104,9 +104,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-            <li class="active"><a href="index.php">Home</a></li>            
-            <li>
-              <a href="#" class="active">Perguruan Tinggi</a>
+            <li class=""><a href="index.php">Home</a></li>            
+            <li class="active">
+              <a href="#" class="">Perguruan Tinggi</a>
             </li>           
             <li><a href="gallery.html">Gallery</a></li>            
             <li><a href="contact.html">Contact</a></li>             
@@ -141,7 +141,7 @@
          <div class="mu-page-breadcrumb-area">
            <h2>List Kampus</h2>
            <ol class="breadcrumb">
-            <li class="active"><a href="index.php">Home</a></li>            
+            <li class=""><a href="index.php">Home</a></li>            
             <li class="active">List Kampus</li>
           </ol>
          </div>
