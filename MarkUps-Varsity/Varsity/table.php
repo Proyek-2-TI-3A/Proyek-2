@@ -53,14 +53,14 @@
             </div>
 
             <ul class="nav">
-                <li class="active">
+                <li class="">
                     <a href="dashboard.php">
                         <i class="pe-7s-graph"></i>
                         <p>Dashboard</p>
                     </a>
                 </li>
                 
-                <li>
+                <li class="active">
                     <a href="#">
                         <i class="pe-7s-note2"></i>
                         <p>List Kampus</p>
