@@ -166,15 +166,6 @@
           </div>
           <!-- end title -->
           <!-- start contact content -->
-          <?php 
-    // select all tasks if page is visited or refreshed
-
-    
-    
-    require "db_connection/konek.php";
-    $query = mysqli_query($con, "SELECT * FROM Kampus ORDER BY id");
-		// $tasks = mysqli_query($db, "SELECT * FROM tasks");
-    while ($hasil = mysqli_fetch_array($query)) { ?>
           <div class="mu-contact-content">           
             <div class="row">
               <div class="col-md-50">
@@ -201,7 +192,7 @@
                                           <td></td>
                                           <td></td>
                                         </tr>
-                                        <?php } ?>
+
                                     </tbody>
                                 </table>
                 </div>
@@ -209,7 +200,6 @@
               </div>
             </div>
           </div>
-          <?php } ?>	
           <!-- end contact content -->
          </div>
        </div>
